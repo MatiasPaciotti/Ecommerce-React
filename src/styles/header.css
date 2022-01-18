@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  margin: 2rem;
+}
+
+.header-item {
+  display: flex;
+  gap: 10px;
+}
+
+.main-menu {
+  z-index: 15;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.icon-menu {
+  cursor: pointer;
+}
+
+.list-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.list-group {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 75vw;
+  list-style-type: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.list-menu-mobile {
+  list-style-type: none;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+li {
+  margin: 5px;
+  font-weight: bold;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 3px solid rgba(255, 125, 27, 255);
+}
+
+.avatar-user {
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.avatar-user:hover {
+  border: 1px solid rgba(255, 125, 27, 255);
+}
+
+.close-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+.cart-menu {
+  z-index: 15;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 90vw;
+  min-height: 50%;
+  max-height: max-content;
+  top: 17vh;
+  left: 5vw;
+  border-radius: 2%;
+  -webkit-box-shadow: 0px 10px 17px -3px #000000;
+  box-shadow: 0px 10px 17px -3px #000000;
+}
+
+.nav-icon-cart {
+  cursor: pointer;
+}
+
+h4 {
+  color: rgba(255, 125, 27, 255);
+  padding: 10px;
+  font-weight: bold;
+}
+
+.cart-items {
+  border-top: 0.5px solid rgb(207, 207, 207);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-description {
+  position: absolute;
+  top: 50%;
+}
+
+@media (min-width: 600px) {
+  .icon-menu {
+    display: none;
+  }
+
+  .cart-menu {
+    width: 35vw;
+    right: 5vw;
+    left: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .list-menu {
+    display: none;
+  }
+
+}
